@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Plain Sheet with Black Footer and Logo</title>
+    <style>
+      /* Set the background image for the page */
+      body {
+        background-image: url('');
+        background-size:500pt;
+        background-position:10vh;
+        background-repeat: no-repeat;
+        display: flex;
+        min-width:90vh;
+        flex-direction: column;
+        min-height: 80vh;
+      }
+
+      /* Set the color of the text in the footer to white */
+      footer {
+        height: 50px;
+        background-color: black;
+        color: white;
+        margin-top: auto;
+      }
+
+      /* Set the size and background color of the logo rectangle */
+      .logo {
+        width: 100px;
+        height: 50px;
+        background-color: gray;
+        margin-bottom: 20px;
+      }
+
+      /* Create a horizontal layout for the logo and titles */
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      /* Set the font size and color of the titles */
+      .title {
+        font-size: 20px;
+        color: black;
+      }
+
+      /* Set the size and position of the content area */
+      .content {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"></div>
+      <h2 class="title">Market News</h2>
+      <h2 class="title">Item Here</h2>
+      <h2 class="title">Premium</h2>
+    </div>
+    <div class="content">
+      <p>This is some sample text for the content area.</p>
+    </div>
+    <footer>
+      <p>This is the footer.</p>
+    </footer>
+  </body>
+</html>
